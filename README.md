@@ -17,12 +17,11 @@ WSL2 Ubuntu com Python 3.12, Docker Engine + plugin `docker compose`, Ollama em 
 ## Inicialização
 
 ```bash
-cd sre-lab-ai-reconstruido
+cd sre-lab-ai
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 # Verificar docker compose config antes de iniciar
-./start-ai-lab.sh
 curl http://127.0.0.1:8000/health
 python -m agent.agent
 ```
